@@ -44,7 +44,7 @@
 }
 
 .title {
-  width: 300px;
+  width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -66,7 +66,7 @@
   color: #2ec4b6;
 }
 
-@media only screen and (max-width:490px) {
+@media only screen and (max-width:578px) {
   .item {
     display: grid;
     padding: 10px;
@@ -102,8 +102,8 @@
 
 
 
-@media only screen and (max-width:350px) {
-  .item .img {
-    width: 120px;
+@media only screen and (max-width:484px) {
+  .item .img img {
+    width: 80%;
   }
 }

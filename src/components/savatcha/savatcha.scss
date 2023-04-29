@@ -24,7 +24,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding-bottom: 5px;
   font-size: 18px;
   background-color: transparent;
   border: 2px solid #2ec4b6;
@@ -58,5 +57,11 @@
 
   &>p {
     color: #2ec4b6;
+  }
+}
+
+@media only screen and (max-width:416px){
+  .savatcha .items{
+    padding: 0;
   }
 }
