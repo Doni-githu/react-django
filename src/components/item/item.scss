@@ -1,0 +1,109 @@
+.item {
+  width: 100%;
+  border: 1px solid #2ec4b6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.item .img {
+  width: 150px;
+  height: 100px;
+
+  &>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.item .btns {
+  border: 1px solid #2ec4b6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 130px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.item .btns p {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .btns .num {
+  font-weight: 400;
+  color: #2ec4b6;
+}
+
+.title {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #2ec4b6;
+}
+
+.item .texts {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.item .texts .cost {
+  font-size: 24px;
+  color: #2ec4b6;
+}
+
+.item .ishora {
+  cursor: pointer;
+  color: #2ec4b6;
+}
+
+@media only screen and (max-width:490px) {
+  .item {
+    display: grid;
+    padding: 10px;
+    grid-template-areas:
+      "img setting setting"
+      "title title title"
+    ;
+    grid-gap: 10px;
+    align-items: start;
+    justify-content: center;
+
+
+    &>img {
+      grid-area: img;
+    }
+
+    .texts {
+      grid-area: title;
+    }
+
+    .btns {
+      grid-area: setting;
+    }
+  }
+
+  .item .texts {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:350px) {
+  .item .img {
+    width: 120px;
+  }
+}
